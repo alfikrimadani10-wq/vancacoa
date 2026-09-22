@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vancacoa | Every chocolate has a story</title>
+  <meta name="description" content="Vancacoa: cokelat single origin dari kakao Bangka. Ikuti perjalanan cokelat dari kebun petani sampai ke tanganmu.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vancacoaqr1.css">
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav" id="nav">
+    <a href="#beranda" class="brand" aria-label="Vancacoa, ke beranda"><img src="images/logo-vancacoa-light.webp" alt="Vancacoa" width="150" height="49"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#perjalanan">Perjalanan</a>
+      <a href="#scan">Scan QR</a>
+      <a href="#petani">Petani</a>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#kuis">Kuis</a>
+      <a href="#chocobuddy" class="btn btn-small">ChocoBuddy</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="beranda">
+      <div class="beans" aria-hidden="true">
+        <span class="bean"></span><span class="bean"></span><span class="bean"></span>
+        <span class="bean"></span><span class="bean"></span><span class="bean"></span>
+        <span class="bean"></span><span class="bean"></span><span class="bean"></span>
+        <span class="bean"></span><span class="bean"></span><span class="bean"></span>
+      </div>
+      <div class="hero-inner">
+        <p class="eyebrow">Cokelat single origin dari Bangka</p>
+        <h1>Every chocolate<br>has a <em>story.</em></h1>
+        <p class="lead">Mengangkat kakao Bangka, memberdayakan petani, menciptakan nilai. Scan, baca, lalu rasakan perjalanannya dari kebun sampai jadi cokelat.</p>
+        <div class="hero-cta">
+          <a href="#perjalanan" class="btn">Mulai perjalanan</a>
+          <a href="#scan" class="btn btn-ghost">Coba scan QR</a>
+        </div>
+        <p class="tagline">From Local Cocoa to Local Impact</p>
+      </div>
+      <div class="hero-media" aria-hidden="true">
+        <img class="hero-splash" src="images/hero-splash.webp" alt="">
+        <img class="hero-shards" src="images/hero-serpihan.webp" alt="">
+        <img class="hero-pack" src="images/hero-kemasan.webp" alt="" width="407" height="612">
+      </div>
+      <a href="#angka" class="scroll-hint" aria-label="Gulir ke bawah">&#8595;</a>
+    </section>
+
+    <!-- ================= ANGKA ================= -->
+    <section class="stats" id="angka">
+      <div class="container">
+        <h2 class="section-title reveal">Progres awal membentuk ekosistem</h2>
+        <div class="stat-grid">
+          <div class="stat reveal"><strong class="count" data-target="4">0</strong><span>petani kakao<br>dibina dan bermitra</span></div>
+          <div class="stat reveal"><strong class="count" data-target="20" data-prefix="&plusmn;">0</strong><span>desa/kelurahan<br>dieksplorasi potensinya</span></div>
+          <div class="stat reveal"><strong class="count" data-target="3">0</strong><span>single origin<br>diproduksi jadi cokelat bar</span></div>
+          <div class="stat reveal"><strong class="count" data-target="13">0</strong><span>varian cokelat<br>telah dikembangkan</span></div>
+          <div class="stat reveal"><strong class="count" data-target="4">0</strong><span>pelatihan<br>pengolahan kakao diinisiasi</span></div>
+          <div class="stat reveal"><strong class="count" data-target="1">0</strong><span>winnower<br>dirancang dan dibuat mandiri</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MASALAH ================= -->
+    <section class="problem">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow dark">Kenapa Vancacoa ada</p>
+          <h2 class="section-title left">Bangka perlu nilai tambah produk</h2>
+          <ul class="checklist">
+            <li>Ekonomi masyarakat masih sangat bergantung pada timah dan sawit.</li>
+            <li>Nilai kakao belum optimal. Harga di tingkat petani belum selalu mencerminkan mutu dan potensi pengolahannya.</li>
+            <li>Oleh-oleh perlu pembeda. Bangka membutuhkan lebih banyak produk khas berbasis komoditas lokal.</li>
+          </ul>
+        </div>
+        <div class="fact-card reveal">
+          <div class="fact-item">
+            <span class="fact-big">#6</span>
+            <p>Indonesia berada di posisi ke-6 negara dengan konsumsi cokelat terbesar di dunia (7,3 kg per kapita).</p>
+            <small>Data 2021, dikutip Databoks/Tempo</small>
+          </div>
+          <div class="fact-item">
+            <span class="fact-big">17,5%</span>
+            <p>Produktivitas kakao Bangka Belitung mencapai 0,53 ton/ha, lebih tinggi dari rata-rata nasional.</p>
+            <small>Sumber: Statistik Tanaman Perkebunan Indonesia</small>
+          </div>
+          <img class="fact-photo" src="images/aneka-cokelat.jpg" alt="Aneka cokelat, pasar cokelat Indonesia yang terus tumbuh" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PERJALANAN (INTERAKTIF) ================= -->
+    <section class="journey" id="perjalanan">
+      <div class="container">
+        <p class="eyebrow center">Interactive storytelling</p>
+        <h2 class="section-title reveal">Perjalanan Cokelat Vancacoa</h2>
+        <p class="section-sub reveal">Klik tiap tahap untuk melihat bagaimana petani dan tim kami mengubah sebutir biji menjadi sebatang cokelat.</p>
+
+        <div class="stage-nav" id="stageNav" role="tablist" aria-label="Tahap perjalanan cokelat"></div>
+        <div class="stage-track"><div class="stage-fill" id="stageFill"></div></div>
+
+        <article class="stage-panel" id="stagePanel" aria-live="polite">
+          <div class="stage-media" id="stageMedia">
+            <img id="stageImg" alt="">
+            <div class="noimg-note" id="noImgNote"></div>
+            <span class="stage-badge" id="stageBadge"></span>
+          </div>
+          <div class="stage-body">
+            <p class="stage-count" id="stageCount"></p>
+            <h3 id="stageTitle"></h3>
+            <p class="stage-intro" id="stageIntro"></p>
+            <ol class="stage-steps" id="stageSteps"></ol>
+            <div class="stage-fact">
+              <strong id="stageFactTitle"></strong>
+              <p id="stageFact"></p>
+            </div>
+            <div class="stage-controls">
+              <button class="btn btn-ghost-dark" id="prevStage">&larr; Sebelumnya</button>
+              <button class="btn" id="nextStage">Berikutnya &rarr;</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= SIMULASI SCAN QR ================= -->
+    <section class="scan" id="scan">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">Interactive QR Storytelling</p>
+          <h2 class="section-title left light">Scan, baca ceritanya, gabung komunitas</h2>
+          <ol class="flow">
+            <li><b>Temukan produk.</b> Tertarik pada kemasan premium bermotif khas Bangka.</li>
+            <li><b>Scan QR dan baca cerita petani.</b> Kenali orang di balik kakao yang kamu pegang.</li>
+            <li><b>Gabung ChocoBuddy.</b> Dapat konten eksklusif, event, dan reward spesial.</li>
+          </ol>
+          <p class="hint">Coba sendiri di layar HP di samping.</p>
+        </div>
+
+        <div class="phone-wrap reveal">
+          <div class="phone" id="phone">
+            <div class="phone-notch"></div>
+
+            <!-- Layar 1: kemasan -->
+            <div class="screen screen-pack is-active" id="screenPack">
+              <div class="pack" id="pack">
+                <div class="pack-top">VANCACOA</div>
+                <div class="pack-sub">DARK STORY</div>
+                <div class="pack-pill">Single Origin Bangka</div>
+                <div class="qr" id="qr" aria-hidden="true">
+                  <span class="scanline"></span>
+                </div>
+                <div class="pack-note">Scan untuk baca cerita petani</div>
+              </div>
+              <button class="btn btn-block" id="scanBtn">Simulasikan scan QR</button>
+            </div>
+
+            <!-- Layar 2: cerita -->
+            <div class="screen screen-story" id="screenStory">
+              <p class="mini-label">Cerita petani</p>
+              <div class="story-avatar" aria-hidden="true">&#127794;</div>
+              <h4>[Nama petani mitra]</h4>
+              <p class="story-place">[Desa/kelurahan], Bangka</p>
+              <p class="story-quote">&ldquo;[Tempel kutipan petani di sini.]&rdquo;</p>
+              <div class="chips">
+                <button class="chip" data-go="1">Menanam</button>
+                <button class="chip" data-go="2">Merawat</button>
+                <button class="chip" data-go="3">Panen</button>
+                <button class="chip" data-go="4">Pascapanen</button>
+              </div>
+              <a class="btn btn-block" href="#chocobuddy" id="joinFromPhone">Gabung ChocoBuddy</a>
+              <button class="link-btn" id="resetPhone">&larr; Kembali ke kemasan</button>
+            </div>
+          </div>
+        </div>
+      <div class="container">
+        <figure class="storyboard reveal">
+          <img src="images/storyboard-qr.jpg" alt="Mock-up kemasan Vancacoa Dark Story dan storyboard perjalanan konsumen: temukan produk, scan QR, gabung komunitas ChocoBuddy" loading="lazy">
+          <figcaption>Mock-up kemasan Vancacoa Dark Story dan alur perjalanan konsumennya</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= PETANI ================= -->
+    <section class="farmers" id="petani">
+      <div class="container split">
+        <div class="farmer-photo reveal" id="farmerPhoto">
+          <img src="images/kakao-bangka.jpg" alt="Buah kakao matang di pohon, hasil kebun petani mitra Vancacoa" loading="lazy" onerror="this.parentNode.classList.add('noimg'); this.remove();">
+          <div class="noimg-note">Letakkan foto kebun/petani di<br><code>images/kakao-bangka.jpg</code></div>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow dark">Di balik setiap batang</p>
+          <h2 class="section-title left">Dampak yang kami cari</h2>
+          <p class="section-sub left">Bukan hanya penjualan, tetapi penguatan alasan ekonomi untuk merawat dan menanam kakao Bangka.</p>
+          <div class="impact-grid">
+            <div class="impact"><span>1</span><h4>Harga lebih baik</h4><p>Kakao dibeli di atas rata-rata pengepul.</p></div>
+            <div class="impact"><span>2</span><h4>Insentif mutu</h4><p>Petani terdorong memperbaiki pascapanen.</p></div>
+            <div class="impact"><span>3</span><h4>Produk bernilai tambah</h4><p>Kakao hadir sebagai cokelat dan oleh-oleh.</p></div>
+            <div class="impact"><span>4</span><h4>Pasar yang tumbuh</h4><p>Permintaan membuka ruang kemitraan petani baru.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KEUNGGULAN ================= -->
+    <section class="selling" id="keunggulan">
+      <div class="container">
+        <h2 class="section-title reveal">Kenapa Vancacoa berbeda</h2>
+        <p class="section-sub reveal">Sentuh atau klik kartu untuk membaliknya.</p>
+        <div class="flip-grid">
+          <button class="flip reveal" aria-label="Less-Sweet Dark Chocolate">
+            <span class="flip-inner">
+              <span class="flip-front"><img class="flip-ico" src="images/ikon-less-sweet.webp" alt="" loading="lazy"><b>Less-Sweet Dark Chocolate</b></span>
+              <span class="flip-back">Mengolah kakao menjadi produk yang relevan untuk konsumsi harian dan oleh-oleh.</span>
+            </span>
+          </button>
+          <button class="flip reveal" aria-label="Authentic Cocoa Experience">
+            <span class="flip-inner">
+              <span class="flip-front"><img class="flip-ico" src="images/ikon-cocoa.webp" alt="" loading="lazy"><b>Authentic Cocoa Experience</b></span>
+              <span class="flip-back">Menggunakan cocoa butter asli dengan formulasi yang tepat.</span>
+            </span>
+          </button>
+          <button class="flip reveal" aria-label="Interactive QR Storytelling">
+            <span class="flip-inner">
+              <span class="flip-front"><img class="flip-ico" src="images/ikon-qr.webp" alt="" loading="lazy"><b>Interactive QR Storytelling</b></span>
+              <span class="flip-back">QR code mengajak konsumen mengikuti perjalanan cokelat, dari asal kakao Bangka.</span>
+            </span>
+          </button>
+          <button class="flip reveal" aria-label="ChocoBuddy Community">
+            <span class="flip-inner">
+              <span class="flip-front"><img class="flip-ico" src="images/ikon-komunitas.webp" alt="" loading="lazy"><b>ChocoBuddy Community</b></span>
+              <span class="flip-back">Pembeli dapat bergabung dalam komunitas pecinta Vancacoa dan kakao Nusantara.</span>
+            </span>
+          </button>
+          <button class="flip reveal" aria-label="Premium Travel Souvenir">
+            <span class="flip-inner">
+              <span class="flip-front"><img class="flip-ico" src="images/ikon-souvenir.webp" alt="" loading="lazy"><b>Premium Travel Souvenir</b></span>
+              <span class="flip-back">Ukuran praktis dan desain identitas Bangka yang premium, mudah dibawa sebagai oleh-oleh.</span>
+            </span>
+          </button>
+        </div>
+
+        <div class="pack-gallery reveal">
+          <figure class="shot" data-file="images/kemasan-bar.jpg">
+            <img src="images/kemasan-bar.jpg" alt="Kemasan cokelat bar Vancacoa" onerror="this.parentNode.classList.add('noimg'); this.remove();">
+            <figcaption>Kemasan cokelat bar</figcaption>
+          </figure>
+          <figure class="shot" data-file="images/brownies-box.jpg">
+            <img src="images/brownies-box.jpg" alt="Kemasan brownies cokelat Vancacoa" onerror="this.parentNode.classList.add('noimg'); this.remove();">
+            <figcaption>Brownies cokelat</figcaption>
+          </figure>
+          <figure class="shot" data-file="images/totebag.jpg">
+            <img src="images/totebag.jpg" alt="Tote bag Vancacoa" onerror="this.parentNode.classList.add('noimg'); this.remove();">
+            <figcaption>Tote bag</figcaption>
+          </figure>
+          <figure class="shot wide" data-file="images/kemasan-varian.jpg">
+            <img src="images/kemasan-varian.jpg" alt="Pilihan kemasan cokelat bar Vancacoa: dark 72%, milk 36%, extra dark 85%" onerror="this.parentNode.classList.add('noimg'); this.remove();">
+            <figcaption>Pilihan kemasan: Dark 72%, Milk 36%, Extra Dark 85%</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KUIS ================= -->
+    <section class="quiz" id="kuis">
+      <div class="container narrow">
+        <p class="eyebrow center">Main sebentar</p>
+        <h2 class="section-title light reveal">Seberapa kenal kamu dengan cokelat?</h2>
+        <div class="quiz-card" id="quizCard">
+          <p class="quiz-progress" id="quizProgress"></p>
+          <h3 id="quizQuestion"></h3>
+          <div class="quiz-options" id="quizOptions"></div>
+          <p class="quiz-feedback" id="quizFeedback"></p>
+          <button class="btn" id="quizNext" hidden>Lanjut</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHOCOBUDDY ================= -->
+    <section class="join" id="chocobuddy">
+      <img class="join-decor" src="images/ikon-komunitas.webp" alt="" aria-hidden="true" loading="lazy">
+      <div class="container narrow">
+        <h2 class="section-title reveal">Gabung Komunitas ChocoBuddy</h2>
+        <p class="section-sub reveal">Dapatkan konten eksklusif, event dan workshop, serta reward spesial untuk pecinta cokelat bermakna.</p>
+        <form class="join-form reveal" id="joinForm" novalidate>
+          <label>Nama
+            <input type="text" id="jName" placeholder="Nama kamu" required>
+          </label>
+          <label>Email atau WhatsApp
+            <input type="text" id="jContact" placeholder="nama@email.com / 08xxxxxxxxxx" required>
+          </label>
+          <button type="submit" class="btn btn-block">Gabung sekarang</button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="brand"><img src="images/logo-vancacoa-light.webp" alt="Vancacoa" width="150" height="49" loading="lazy"></p>
+    <p>Mengangkat Kakao Bangka, Memberdayakan Petani, Menciptakan Nilai.</p>
+    <p class="small">&copy; <span id="year"></span> Vancacoa. From Local Cocoa to Local Impact.</p>
+  </footer>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+  (function () {
+    'use strict';
+
+    /* ---------- Data tahap perjalanan ---------- */
+    var stages = [
+      { group: 'Di kebun', title: 'Penanaman', img: 'images/01-penanaman.jpg', emoji: '\uD83C\uDF31',
+        intro: 'Semuanya dimulai dari sebutir biji dan tangan petani yang sabar menyiapkan tempat tumbuhnya.',
+        steps: [
+          ['Pembibitan', 'Biji dari buah kakao pilihan disemai dalam polybag dan dirawat beberapa bulan sampai bibit cukup kuat untuk dipindah.'],
+          ['Menanam di lahan', 'Bibit ditanam dengan jarak teratur agar tiap pohon mendapat cukup cahaya, udara, dan nutrisi.'],
+          ['Pohon penaung', 'Kakao suka teduh. Pohon penaung seperti pisang atau kelapa melindungi bibit muda dari terik matahari.']
+        ],
+        factTitle: 'Tahukah kamu?', fact: 'Pohon kakao baru mulai berbuah setelah beberapa tahun. Cokelat di tanganmu lahir dari kesabaran yang panjang.' },
+      { group: 'Di kebun', title: 'Perawatan', img: 'images/02-perawatan.jpg', emoji: '\uD83E\uDDD1\u200D\uD83C\uDF3E',
+        intro: 'Pohon kakao perlu dijaga terus-menerus supaya sehat dan menghasilkan buah bermutu.',
+        steps: [
+          ['Pemangkasan', 'Cabang berlebih dipangkas supaya cahaya dan udara merata, dan pohon fokus menghasilkan buah.'],
+          ['Pemupukan dan kebun bersih', 'Tanah diberi nutrisi dan gulma dibersihkan agar pohon tidak berebut makanan.'],
+          ['Menjaga dari hama dan penyakit', 'Petani rutin memeriksa buah dan membuang yang terserang, supaya hama dan jamur tidak menyebar.']
+        ],
+        factTitle: 'Tahukah kamu?', fact: 'Bunga kakao tumbuh langsung dari batang pohon. Perawatan yang telaten menentukan seberapa banyak bunga berubah jadi buah.' },
+      { group: 'Di kebun', title: 'Panen', img: 'images/03-panen.jpg', emoji: '\uD83C\uDF3F',
+        intro: 'Kunci rasa dimulai dari memetik buah pada waktu yang tepat, bukan terlalu muda dan bukan terlalu tua.',
+        steps: [
+          ['Pilih buah yang matang', 'Petani mengenali kematangan dari perubahan warna kulit buah, misalnya menjadi kuning atau oranye.'],
+          ['Petik dengan hati-hati', 'Buah dipetik dengan alat tajam supaya tangkai dan bantalan bunga di batang tidak rusak, sehingga pohon bisa berbuah lagi.'],
+          ['Pecah buah, ambil biji', 'Buah dibelah dan biji berselimut pulp putih dikeluarkan untuk segera diproses.']
+        ],
+        factTitle: 'Tahukah kamu?', fact: 'Satu buah kakao berisi puluhan biji. Butuh banyak buah untuk membuat satu batang cokelat.' },
+      { group: 'Di kebun', title: 'Pascapanen', img: 'images/04-pascapanen.jpg', emoji: '\u2600\uFE0F',
+        intro: 'Tahap yang paling menentukan rasa. Di sinilah aroma cokelat mulai terbentuk.',
+        steps: [
+          ['Fermentasi', 'Biji beserta pulpnya difermentasi beberapa hari. Proses ini mengurangi rasa pahit dan sepat, serta membentuk calon aroma cokelat.'],
+          ['Pengeringan', 'Biji dijemur sampai kering hingga kadar airnya rendah, supaya awet dan tidak berjamur.'],
+          ['Sortasi dan penyimpanan', 'Biji rusak atau cacat dipisahkan. Biji yang baik disimpan di tempat kering sebelum dikirim.']
+        ],
+        factTitle: 'Kenapa ini penting?', fact: 'Mutu pascapanen sangat memengaruhi rasa akhir. Karena itu Vancacoa membeli kakao di atas rata-rata harga pengepul sebagai insentif mutu bagi petani.' },
+      { group: 'Di dapur produksi', title: 'Sangrai dan Pisah Kulit', img: 'images/05-sangrai.jpg', emoji: '\uD83D\uDD25',
+        intro: 'Biji kering dari kebun mulai diubah menjadi bahan cokelat.',
+        steps: [
+          ['Sortasi ulang', 'Biji diperiksa lagi sebelum diproses supaya hanya biji terbaik yang masuk.'],
+          ['Sangrai (roasting)', 'Biji disangrai dengan suhu dan waktu terkontrol untuk memunculkan aroma dan rasa cokelat yang khas.'],
+          ['Pecah dan pisahkan kulit', 'Biji dipecah lalu kulitnya dipisah (winnowing) sehingga tersisa nib kakao, yaitu keping isi biji.']
+        ],
+        factTitle: 'Buatan sendiri', fact: 'Vancacoa merancang dan membuat sendiri alat winnower untuk memisahkan kulit dari nib.' },
+      { group: 'Di dapur produksi', title: 'Giling dan Haluskan', img: 'images/06-giling.jpg', emoji: '\u2699\uFE0F',
+        intro: 'Nib kakao diubah menjadi pasta halus yang menjadi jiwa dari cokelat.',
+        steps: [
+          ['Penggilingan nib', 'Nib digiling hingga meleleh menjadi pasta kakao (cocoa mass) karena lemak alaminya keluar.'],
+          ['Campur bahan', 'Pasta kakao dicampur cocoa butter asli dan gula secukupnya. Resep dark chocolate Vancacoa dibuat less-sweet.'],
+          ['Penghalusan (refining)', 'Campuran dihaluskan sampai tidak terasa berpasir di lidah, sehingga teksturnya lembut.']
+        ],
+        factTitle: 'Tahukah kamu?', fact: 'Cocoa butter asli membuat cokelat meleleh lembut di mulut, tanpa rasa berminyak dan lengket di langit-langit.' },
+      { group: 'Di dapur produksi', title: 'Temper, Cetak dan Kemas', img: 'images/07-kemas.jpg', emoji: '\uD83C\uDF81',
+        intro: 'Tahap akhir yang memberi cokelat kilap, bunyi patah yang renyah, dan identitasnya.',
+        steps: [
+          ['Tempering', 'Suhu cokelat diatur naik dan turun supaya cocoa butter mengkristal rata, menghasilkan cokelat mengilap dan tidak kusam.'],
+          ['Cetak dan dinginkan', 'Cokelat dituang ke cetakan, didiamkan sampai padat, lalu dilepas dari cetakan.'],
+          ['Kemas dengan cerita', 'Batangan dibungkus kemasan bermotif khas Bangka, lengkap dengan QR code yang membawamu ke cerita ini.']
+        ],
+        factTitle: 'Sampai di tanganmu', fact: 'Setelah tahap ini, cokelat siap dinikmati atau dibawa pulang sebagai oleh-oleh khas Bangka.' }
+    ];
+
+    var current = 0;
+    var navEl = document.getElementById('stageNav');
+    var panel = document.getElementById('stagePanel');
+    var img = document.getElementById('stageImg');
+    var media = document.getElementById('stageMedia');
+    var noImgNote = document.getElementById('noImgNote');
+
+    stages.forEach(function (s, i) {
+      var b = document.createElement('button');
+      b.className = 'stage-btn';
+      b.setAttribute('role', 'tab');
+      b.innerHTML = '<span class="stage-dot">' + (i + 1) + '</span><span class="stage-label">' + s.title + '</span>';
+      b.addEventListener('click', function () { setStage(i); });
+      navEl.appendChild(b);
+    });
+
+    function setStage(i) {
+      current = Math.max(0, Math.min(stages.length - 1, i));
+      var s = stages[current];
+      panel.classList.remove('swap');
+      void panel.offsetWidth; /* restart animasi */
+      panel.classList.add('swap');
+
+      var btns = navEl.querySelectorAll('.stage-btn');
+      btns.forEach(function (b, idx) {
+        b.classList.toggle('is-active', idx === current);
+        b.classList.toggle('is-done', idx < current);
+        b.setAttribute('aria-selected', idx === current ? 'true' : 'false');
+      });
+      document.getElementById('stageFill').style.width = (current / (stages.length - 1)) * 100 + '%';
+
+      media.classList.remove('noimg');
+      media.setAttribute('data-stage', String(current + 1));
+      img.style.display = '';
+      img.onerror = function () {
+        media.classList.add('noimg');
+        img.style.display = 'none';
+        noImgNote.innerHTML = '<span class="big-emoji">' + s.emoji + '</span>Letakkan foto di<br><code>' + s.img + '</code>';
+      };
+      img.alt = 'Tahap ' + s.title;
+      img.src = s.img;
+
+      document.getElementById('stageBadge').textContent = s.group;
+      document.getElementById('stageBadge').className = 'stage-badge ' + (current < 4 ? 'badge-farm' : 'badge-kitchen');
+      document.getElementById('stageCount').textContent = 'Tahap ' + (current + 1) + ' dari ' + stages.length;
+      document.getElementById('stageTitle').textContent = s.title;
+      document.getElementById('stageIntro').textContent = s.intro;
+      document.getElementById('stageFactTitle').textContent = s.factTitle;
+      document.getElementById('stageFact').textContent = s.fact;
+
+      var ol = document.getElementById('stageSteps');
+      ol.innerHTML = '';
+      s.steps.forEach(function (st) {
+        var li = document.createElement('li');
+        li.innerHTML = '<b></b><span></span>';
+        li.querySelector('b').textContent = st[0];
+        li.querySelector('span').textContent = st[1];
+        ol.appendChild(li);
+      });
+
+      document.getElementById('prevStage').disabled = current === 0;
+      document.getElementById('nextStage').disabled = current === stages.length - 1;
+    }
+
+    document.getElementById('prevStage').addEventListener('click', function () { setStage(current - 1); });
+    document.getElementById('nextStage').addEventListener('click', function () { setStage(current + 1); });
+    document.addEventListener('keydown', function (e) {
+      var r = document.getElementById('perjalanan').getBoundingClientRect();
+      var visible = r.top < window.innerHeight * 0.6 && r.bottom > window.innerHeight * 0.3;
+      if (!visible) return;
+      if (e.key === 'ArrowRight') setStage(current + 1);
+      if (e.key === 'ArrowLeft') setStage(current - 1);
+    });
+    setStage(0);
+
+    /* ---------- Simulasi scan QR ---------- */
+    var phone = document.getElementById('phone');
+    var scanBtn = document.getElementById('scanBtn');
+    var screenPack = document.getElementById('screenPack');
+    var screenStory = document.getElementById('screenStory');
+
+    scanBtn.addEventListener('click', function () {
+      phone.classList.add('scanning');
+      scanBtn.disabled = true;
+      scanBtn.textContent = 'Memindai...';
+      setTimeout(function () {
+        phone.classList.remove('scanning');
+        screenPack.classList.remove('is-active');
+        screenStory.classList.add('is-active');
+        scanBtn.disabled = false;
+        scanBtn.textContent = 'Simulasikan scan QR';
+      }, 1700);
+    });
+    document.getElementById('resetPhone').addEventListener('click', function () {
+      screenStory.classList.remove('is-active');
+      screenPack.classList.add('is-active');
+    });
+    document.querySelectorAll('.chip').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        setStage(parseInt(chip.getAttribute('data-go'), 10) - 1);
+        document.getElementById('perjalanan').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    /* ---------- Hitung angka ---------- */
+    function animateCount(el) {
+      var target = parseInt(el.getAttribute('data-target'), 10);
+      var prefix = el.getAttribute('data-prefix') || '';
+      var start = null, dur = 1200;
+      function step(ts) {
+        if (!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        el.innerHTML = prefix + Math.round(target * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    /* ---------- Reveal saat scroll ---------- */
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          en.target.classList.add('in');
+          var c = en.target.querySelector('.count');
+          if (c && !c.dataset.done) { c.dataset.done = '1'; animateCount(c); }
+          io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+
+    /* ---------- Kartu flip (dukungan sentuh) ---------- */
+    document.querySelectorAll('.flip').forEach(function (f) {
+      f.addEventListener('click', function () { f.classList.toggle('flipped'); });
+    });
+
+    /* ---------- Kuis ---------- */
+    var quiz = [
+      { q: 'Bagian biji kakao yang tersisa setelah kulitnya dipisahkan disebut...', o: ['Nib', 'Pulp', 'Polong'], a: 0,
+        f: 'Benar. Nib adalah keping isi biji yang kemudian digiling menjadi pasta kakao.' },
+      { q: 'Tahap mana yang paling menentukan pembentukan calon aroma cokelat di kebun?', o: ['Pemangkasan', 'Fermentasi', 'Pemupukan'], a: 1,
+        f: 'Fermentasi mengurangi rasa pahit dan sepat serta membentuk calon aroma cokelat.' },
+      { q: 'Untuk apa proses tempering dilakukan?', o: ['Membuat cokelat lebih manis', 'Memisahkan kulit biji', 'Agar cokelat mengilap dan renyah saat dipatahkan'], a: 2,
+        f: 'Tempering mengatur kristal cocoa butter sehingga cokelat mengilap dan tidak kusam.' }
+    ];
+    var qi = 0, score = 0, answered = false;
+    var qCard = document.getElementById('quizCard');
+
+    function renderQuiz() {
+      answered = false;
+      var item = quiz[qi];
+      document.getElementById('quizProgress').textContent = 'Pertanyaan ' + (qi + 1) + ' dari ' + quiz.length;
+      document.getElementById('quizQuestion').textContent = item.q;
+      document.getElementById('quizFeedback').textContent = '';
+      document.getElementById('quizNext').hidden = true;
+      var box = document.getElementById('quizOptions');
+      box.innerHTML = '';
+      item.o.forEach(function (text, idx) {
+        var b = document.createElement('button');
+        b.className = 'opt';
+        b.textContent = text;
+        b.addEventListener('click', function () {
+          if (answered) return;
+          answered = true;
+          var ok = idx === item.a;
+          if (ok) score++;
+          b.classList.add(ok ? 'right' : 'wrong');
+          box.children[item.a].classList.add('right');
+          document.getElementById('quizFeedback').textContent = (ok ? 'Tepat! ' : 'Belum tepat. ') + item.f;
+          var nb = document.getElementById('quizNext');
+          nb.hidden = false;
+          nb.textContent = qi === quiz.length - 1 ? 'Lihat hasil' : 'Lanjut';
+        });
+        box.appendChild(b);
+      });
+    }
+    document.getElementById('quizNext').addEventListener('click', function () {
+      if (qi < quiz.length - 1) { qi++; renderQuiz(); return; }
+      qCard.innerHTML = '<h3>Skor kamu: ' + score + ' / ' + quiz.length + '</h3>' +
+        '<p>' + (score === quiz.length ? 'Kamu sudah jadi pakar cokelat!' : 'Buka lagi perjalanan cokelatnya, lalu coba sekali lagi.') + '</p>' +
+        '<button class="btn" id="quizAgain">Main lagi</button>';
+      document.getElementById('quizAgain').addEventListener('click', function () { location.hash = '#kuis'; location.reload(); });
+    });
+    renderQuiz();
+
+    /* ---------- Form ChocoBuddy (demo, tanpa server) ---------- */
+    document.getElementById('joinForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var n = document.getElementById('jName').value.trim();
+      var c = document.getElementById('jContact').value.trim();
+      var msg = document.getElementById('formMsg');
+      if (!n || !c) { msg.className = 'form-msg err'; msg.textContent = 'Mohon isi nama dan kontak dulu ya.'; return; }
+      msg.className = 'form-msg ok';
+      msg.textContent = 'Terima kasih, ' + n + '! Selamat datang di ChocoBuddy.';
+      this.reset();
+    });
+
+    /* ---------- Navbar, progress scroll, menu mobile ---------- */
+    var nav = document.getElementById('nav');
+    var bar = document.getElementById('scrollProgress');
+    window.addEventListener('scroll', function () {
+      nav.classList.toggle('solid', window.scrollY > 40);
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+    }, { passive: true });
+
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    links.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { links.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  })();
+  </script>
+</body>
+</html>
