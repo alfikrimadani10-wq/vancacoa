@@ -233,8 +233,8 @@ section { padding: clamp(64px, 9vw, 112px) 0; position: relative; }
 .pack-sub { font: 600 .8rem/1 var(--font-body); letter-spacing: .4em; color: var(--cream); }
 .pack-pill { font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--gold); color: var(--gold); padding: 5px 12px; border-radius: 999px; margin: 6px 0 10px; }
 .qr { position: relative; width: 116px; height: 116px; background: #fff; border-radius: 10px; padding: 8px; overflow: hidden; }
-.qr::before { content: ''; position: absolute; inset: 8px; background: conic-gradient(#111 25%, #fff 0 50%, #111 0 75%, #fff 0) 0 0 / 14px 14px; opacity: .9; }
-.qr::after { content: ''; position: absolute; left: 8px; top: 8px; width: 34px; height: 34px; background: #fff; border: 6px solid #111; box-shadow: 66px 0 0 0 #111, 0 66px 0 0 #111; }
+.qr-photo { position: absolute; inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px); object-fit: contain; }
+#fff; border: 6px solid #111; box-shadow: 66px 0 0 0 #111, 0 66px 0 0 #111; }
 .scanline { position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--gold); box-shadow: 0 0 14px 4px rgba(201, 150, 58, .8); opacity: 0; z-index: 3; }
 .phone.scanning .scanline { opacity: 1; animation: scan 1.7s ease-in-out; }
 @keyframes scan { 0% { top: 0; } 50% { top: calc(100% - 3px); } 100% { top: 0; } }
