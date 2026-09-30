@@ -357,3 +357,12 @@ section { padding: clamp(64px, 9vw, 112px) 0; position: relative; }
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+.team { padding: clamp(48px, 8vw, 96px) 0; text-align: center; }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 32px; }
+.team-card { background: #fff; border-radius: 18px; padding: 18px 16px 22px; box-shadow: 0 12px 30px rgba(0,0,0,.10); }
+.team-card img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px; margin-bottom: 14px; }
+.team-card h3 { font-size: 1.05rem; margin: 0 0 4px; }
+.team-card p { margin: 0; color: var(--gold); font-weight: 700; letter-spacing: .08em; }
+@media (max-width: 900px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .team-grid { grid-template-columns: 1fr; } }
